@@ -1,0 +1,10 @@
+version: '4'
+services:
+  web:
+    image: your-app-name-jenkins:latest
+    ports:
+      - "8080:5050"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./app:/app
